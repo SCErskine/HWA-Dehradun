@@ -108,8 +108,8 @@ NB_Ster_mean <- mean(data_s2$Ster)
 NB_Ster_sd   <- sd(data_s2$Ster)
 
 # Extract fixed effects
-B_fe  <- fixef(DensB)
-NB_fe <- fixef(DensNB)
+B_fe  <- fixef(SkinB)
+NB_fe <- fixef(SkinNB)
 
 # Sterilisation sequence on original scale
 B_Ster_seq  <- seq(min(data_s1$Ster), max(data_s1$Ster), length.out = 100)
